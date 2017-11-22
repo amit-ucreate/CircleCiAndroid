@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CircleCIAndroid.iml" filepath="$PROJECT_DIR$/CircleCIAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CircleCiAndroid.iml" filepath="$PROJECT_DIR$/CircleCiAndroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
