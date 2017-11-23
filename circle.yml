@@ -5,11 +5,12 @@ jobs:
     docker:
       - image: circleci/android:api-26-alpha
     environment:
-      JVM_OPTS: -Xmx1536m
+      JVM_OPTS: -Xmx3200m
       dependencies:
           override:
+              - echo y | android update sdk --no-ui --all --filter tools,platform-tools,build-tools-26.0.2,android-26,extra-google-m2repository,extra-google-google_play_services,extra-android-support
               - chmod +x gradlew
-              - ./gradlew dependencies
+              - ANDROID_HOME=/usr/local/android-sdk-linux ./gradlew dependencies
     steps:
       - checkout
       - restore_cache:
