@@ -6,6 +6,10 @@ jobs:
       - image: circleci/android:api-26-alpha
     environment:
       JVM_OPTS: -Xmx1536m
+      dependencies:
+          override:
+              - chmod +x gradlew
+              - ./gradlew dependencies
     steps:
       - checkout
       - restore_cache:
