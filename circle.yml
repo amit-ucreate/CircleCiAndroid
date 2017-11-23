@@ -1,7 +1,10 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/CircleCiAndroid
+  machine:
+      environment:
+          ANDROID_HOME: /usr/local/android-sdk-linux
+      working_directory: ~/CircleCiAndroid
     steps:
       - checkout
       - run:
